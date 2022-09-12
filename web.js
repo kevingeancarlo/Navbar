@@ -1,1 +1,1 @@
-console.log("Deja de hacer lo de redes y empecemos :v");
+console.log("Deja de hacer lo de redes y empecemos :v...elimina la carpeta project man, que pasa");
