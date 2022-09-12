@@ -1,1 +1,1 @@
-console.log("Man pero yo esperaba que ya estuviera la pagina hecha");
+console.log("Deja de hacer lo de redes y empecemos :v");
