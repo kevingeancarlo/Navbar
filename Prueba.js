@@ -1,1 +1,1 @@
-console.log("Kevin nos mataron Y falta el proyecto");
+console.log("Inconformidad integrante del equipo");
