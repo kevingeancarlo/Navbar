@@ -1,1 +1,1 @@
-console.log("Kevin los objetivos estaran para el viernes EOD");
+console.log("No para hoy");
