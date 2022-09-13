@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="col-xs-8 col-xs-offset-2">
+            <h2 class="text-center">Nuevo registro</h2>
+            <form method="post" role="form">
+                <div class="form-group">
+                    <label for="Nombre">Nombre del producto</label>
+                    <input 
+                        name="nombre"
+                        type="text" 
+                        class="form-control"
+                        placeholder="Nombre del producto">
+                </div>
+                <div class="form-group">
+                    <label for="Vendedor">Vendedor</label>
+                    <input
+                        name="vendedor"
+                        type="text" 
+                        class="form-control"
+                        placeholder="Vendedor">
+                </div>
+                <div class="form-group">
+                    <label for="Precio">Valor del producto</label>
+                    <input
+                        name="documento"
+                        type="text" 
+                        class="form-control"
+                        placeholder="Valor del producto">
+                </div>
+                <div class="form-group">
+                    <label for="Impuesto">Impuesto de valor agregado</label>
+                    <input
+                        name="impuesto"
+                        type="text" 
+                        class="form-control"
+                        placeholder="Impuesto">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

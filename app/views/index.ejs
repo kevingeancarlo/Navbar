@@ -15,25 +15,27 @@
         <table class="table mt-2">
             <thead class="thead-dark">
                 <tr>
-                    <th>Nombre de producto</th>
-                    <th>Factura de compra</th>
-                    <th>Valor</th>
+                    <th>Nombre del producto</th>
                     <th>Vendedor</th>
-                    <th>Impuestos</th>
+                    <th>Fecha de generación de factura</th>
+                    <th>Valor del producto</th>
+                    <th>Impuesto de valor agregado</th>
                 </tr>
             </thead>
             <% productos.forEach(function(producto) {%>
             <tr>
-                <td><%= alumno.nombre %></td>
-                <td><%= alumno.documento %></td>
-                <td><%= alumno.fecha %></td>
+                <td><%= producto.nombre %></td>
+                <td><%= producto.vendedor %></td>
+                <td><%= producto.fecha %></td>
+                <td><%= producto.documento %></td>
+                <td><%= producto.impuesto %></td>
             </tr>
             <%})%>
         </table>
         <%} else {%>
             <p>Sin Registros</p>
         <%}%>
-        <a class="btn btn-primary p-2" href="/registro-form">Registrar alumno</a>
+        <a class="btn btn-primary p-2" href="/registro-form">Registrar producto</a>
     </div>
 </body>
 </html>

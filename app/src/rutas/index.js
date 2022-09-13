@@ -10,8 +10,8 @@ router.get('/registro-form', (req, res) => { res.render('registro-form');
 });
 
 router.post('/registro-form', (req, res) => {
-let { nombre, documento } = req.body;
-let nuevoRegistro = { nombre, documento, fecha: new Date() }; productos.push
+let { nombre, documento, impuesto, vendedor } = req.body;
+let nuevoRegistro = { nombre, documento, impuesto, vendedor, fecha: new Date() }; productos.push
 (nuevoRegistro);
 res.redirect("/");
 });
