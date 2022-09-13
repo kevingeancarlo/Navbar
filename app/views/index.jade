@@ -1,5 +1,25 @@
+doctype html
 html(lang="en")
   head
-    title Mi primera pagina web
+    title free market
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css", integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N", crossorigin="anonymous")
+    link(href='css/bootstrap.min.css' rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
+    link(href='css/animate.css' rel='stylesheet' type='text/css')
   body
-    h1 Hola Ing. Julian
+    section(class="full-height text-center" id="main-content")
+      div(class="data")
+        div(class="col-md-25 center-block no-float top-space")
+          img(src="imgs/icecream.png" class="animated fadeIn")
+          h1(class="pacifico big green animated fadeIn delay-1") marketplace
+          div(class="animated fadeInDown delay-2")
+            h2 Donde puedes comprar todo lo que no encuentras en el mercado tradicional
+            nav
+              a(href="menu.html" class="right-space") Menú
+              a(href="contacto.html" class="right-space") Contacto
+              a(href="menu.html" class="right-space") Acerca de
+    script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+    script(src="js/main.js")
+
