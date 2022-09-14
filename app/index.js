@@ -13,8 +13,6 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.use(require('./src/rutas/index'));
-
-
 //Oyente
 app.listen(puerto, () => {
     console.log("Ejecutando express");
