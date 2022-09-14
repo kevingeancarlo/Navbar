@@ -25,11 +25,18 @@
             </thead>
             <% productos.forEach(function(producto) {%>
             <tr>
-                <td><%= producto.nombre %></td>
+                <td><%= producto.nombre %></td>  
                 <td><%= producto.vendedor %></td>
                 <td><%= producto.fecha %></td>
                 <td><%= producto.documento %></td>
                 <td><%= producto.impuesto %></td>
+                <%if (producto.nombre=='Milo') {%>
+                    <img src="/Images/2227146.png" alt="centered image" height="200" width="200">
+                <%} else if (producto.nombre=='Chocolisto'){%>
+                    <img src="/Images/2227146.png" alt="centered image" height="200" width="200">
+                <%} else if (producto.nombre=='Nesquik'){%>
+                    <img src="/Images/2227146.png" alt="centered image" height="200" width="200">
+                <%}%>
             </tr>
             <%})%>
         </table>
