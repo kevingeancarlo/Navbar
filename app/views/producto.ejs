@@ -25,6 +25,7 @@
             </thead>
             <% productos.forEach(function(producto) {%>
             <tr>
+                <td><%= producto.nombre %></td>  
                 <td><%= producto.vendedor %></td>
                 <td><%= producto.fecha %></td>
                 <td><%= producto.documento %></td>
