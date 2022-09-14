@@ -9,6 +9,7 @@ res.render("index", { productos }); });
 router.get('/registro-form', (req, res) => { res.render('registro-form');
 });
 
+
 router.get("/productosregistrados", (req, res) => {
   res.render("productosregistrados", { productos }); });
 
