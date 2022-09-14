@@ -14,12 +14,30 @@
         <h3>Registro de productos</h3>
         <%- include('footer'); %>
         <%if (productos.length) {%>
-            <p class="text-primary">Se encuentran productos registrados</p>
+        <table class="table mt-2">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre del producto</th>
+                    <th>Vendedor</th>
+                    <th>Fecha de generación de factura</th>
+                    <th>Valor del producto</th>
+                    <th>Impuesto de valor agregado</th>
+                </tr>
+            </thead>
+            <% productos.forEach(function(producto) {%>
+            <tr>
+                <td><%= producto.nombre %></td>
+                <td><%= producto.vendedor %></td>
+                <td><%= producto.fecha %></td>
+                <td><%= producto.documento %></td>
+                <td><%= producto.impuesto %></td>
+            </tr>
+            <%})%>
+        </table>
         <%} else {%>
-            <p class="text-danger">Aún no se han registrado productos</p>
+            <p>Aún no se han registrado productos</p>
         <%}%>
         <a class="btn btn-dark p-2" href="/registro-form">Registrar producto</a>
-        <a class="btn btn-dark p-2" href="/productosregistrados">Ver productos registrados</a>
     </div>
 </body>
 </html>
