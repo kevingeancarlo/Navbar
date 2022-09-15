@@ -6,12 +6,14 @@ const app = express();
 const puerto = 5000;
 
 app.set('view engine', 'ejs');
-app.set('views','/app/views');
-app.use(express.static("/app/public"));
 app.set('views',path.join(__dirname+'/views'));
 app.use(express.static(__dirname + "/public"));
-/* app.use(express.urlencoded({extended: false}));
-app.use(express.json()); */
+
+/* app.set('views','/app/views');
+app.use(express.static("/app/public")); */
+
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 app.use(require('./src/rutas/index'));
 //Oyente

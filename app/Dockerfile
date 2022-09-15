@@ -1,14 +1,6 @@
-#FROM node:16
-FROM node:10-alpine
-#Crear directorio para la aplicación
-WORKDIR /app
-#Importar el archivo json del proyecto
-COPY package.json .
-#Instalar complementos del archivo
+FROM node:16
+WORKDIR /usr/src/app
+COPY package*.json ./
 RUN npm install
-#Copiar todos los archivos del proyecto
 COPY . .
-#Publicar puerto
-EXPOSE 5000 
-#Esta línea no se necesita en HEROKU
-CMD [ "node", "index.js" ]
+CMD ["node", "index.js"]

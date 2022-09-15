@@ -9,12 +9,12 @@ res.render("index", { productos }); });
 router.get('/registro-form', (req, res) => { res.render('registro-form');
 });
 
-
 router.get("/productosregistrados", (req, res) => {
   res.render("productosregistrados", { productos }); });
 
 router.get("/producto", (req, res) => {
   res.render("producto", { productos }); });
+
 router.post('/registro-form', (req, res) => {
 let { nombre, documento, impuesto, vendedor } = req.body;
 let nuevoRegistro = { nombre, documento, impuesto, vendedor, fecha: new Date() }; productos.push
