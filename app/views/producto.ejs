@@ -13,29 +13,56 @@
     <div class="container">
         <h3>Registro de productos</h3>
         <%- include('footer'); %>
-        <table class="table mt-2">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Nombre del producto</th>
-                    <th>Vendedor</th>
-                    <th>Fecha de generación de factura</th>
-                    <th>Valor del producto</th>
-                    <th>Impuesto de valor agregado</th>
-                </tr>
-            </thead>
             <% productos.forEach(function(producto) {%>
-            <tr>
-                <td><%= producto.nombre %></td>  
-                <td><%= producto.vendedor %></td>
-                <td><%= producto.fecha %></td>
-                <td><%= producto.documento %></td>
-                <td><%= producto.impuesto %></td>
+                <table class="table mt-2">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nombre del producto</th>
+                            <th>Vendedor</th>
+                            <th>Fecha de generación de factura</th>
+                            <th>Valor del producto</th>
+                            <th>Impuesto de valor agregado</th>
+                        </tr>
+                    </thead>
                 <%if (producto.nombre=='Milo') {%>
-                    <img src="/Images/logo_milo.jpg" alt="centered image" height="200" width="400">
+                    <td><%= producto.nombre %></td>  
+                    <td><%= producto.vendedor %></td>
+                    <td><%= producto.fecha %></td>
+                    <td><%= producto.documento %></td>
+                    <td><%= producto.impuesto %></td>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img class="mx-auto d-block" src="/Images/logo_milo.jpg" height="200" width="400">  
+                            </div>
+                        </div>
+                    </div>
                 <%} else if (producto.nombre=='Chocolisto'){%>
-                    <img src="/Images/logo_chocolisto.jpg" alt="centered image" height="200" width="400">
+                        <td><%= producto.nombre %></td>  
+                        <td><%= producto.vendedor %></td>
+                        <td><%= producto.fecha %></td>
+                        <td><%= producto.documento %></td>
+                        <td><%= producto.impuesto %></td>
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img class="mx-auto d-block" src="/Images/logo_chocolisto.jpg" height="200" width="400">  
+                                </div>
+                            </div>
+                        </div>
                 <%} else if (producto.nombre=='Nesquik'){%>
-                    <img src="/Images/logo_nesquik.jpg" alt="centered image" height="200" width="400">
+                    <td><%= producto.nombre %></td>  
+                    <td><%= producto.vendedor %></td>
+                    <td><%= producto.fecha %></td>
+                    <td><%= producto.documento %></td>
+                    <td><%= producto.impuesto %></td>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img class="mx-auto d-block" src="/Images/logo_nesquik.jpg" height="200" width="400">  
+                            </div>
+                        </div>
+                    </div>
                 <%}%>
             </tr>
             <%})%>
