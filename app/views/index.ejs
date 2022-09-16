@@ -12,15 +12,15 @@
 <body>
     <div class="container">
         <img src="/Images/logoud.jpg" alt="centered image" height="60" width="160">
-        <h3>Registro de productos</h3>
+        <h3 class="text-muted">Registro de productos</h3>
         <%- include('footer'); %>
         <%if (productos.length) {%>
             <p class="text-primary">Se encuentran productos registrados</p>
         <%} else {%>
             <p class="text-danger">Aún no se han registrado productos</p>
         <%}%>
-        <a class="btn btn-dark p-2" href="/registro-form">Registrar producto</a>
-        <a class="btn btn-dark p-2" href="/productosregistrados">Ver productos registrados</a>
+        <a class="btn btn-danger p-2" href="/registro-form">Registrar producto</a>
+        <a class="btn btn-danger p-2" href="/productosregistrados">Ver productos registrados</a>
     </div>
 </body>
 </html>

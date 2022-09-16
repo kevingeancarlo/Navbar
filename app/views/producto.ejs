@@ -24,12 +24,12 @@
                             <th>Impuesto de valor agregado</th>
                         </tr>
                     </thead>
-                <%if (producto.nombre=='Milo') {%>
                     <td><%= producto.nombre %></td>  
                     <td><%= producto.vendedor %></td>
                     <td><%= producto.fecha %></td>
                     <td><%= producto.documento %></td>
                     <td><%= producto.impuesto %></td>
+                <%if (producto.nombre=='Milo') {%>
                     <div class="container mt-5">
                         <div class="row">
                             <div class="col text-center">
@@ -38,11 +38,6 @@
                         </div>
                     </div>
                 <%} else if (producto.nombre=='Chocolisto'){%>
-                        <td><%= producto.nombre %></td>  
-                        <td><%= producto.vendedor %></td>
-                        <td><%= producto.fecha %></td>
-                        <td><%= producto.documento %></td>
-                        <td><%= producto.impuesto %></td>
                         <div class="container mt-5">
                             <div class="row">
                                 <div class="col text-center">
@@ -51,11 +46,6 @@
                             </div>
                         </div>
                 <%} else if (producto.nombre=='Nesquik'){%>
-                    <td><%= producto.nombre %></td>  
-                    <td><%= producto.vendedor %></td>
-                    <td><%= producto.fecha %></td>
-                    <td><%= producto.documento %></td>
-                    <td><%= producto.impuesto %></td>
                     <div class="container mt-5">
                         <div class="row">
                             <div class="col text-center">
