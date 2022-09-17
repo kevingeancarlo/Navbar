@@ -5,6 +5,6 @@
     "serve": "^14.0.1"
   },
   "scripts": {
-    "start": "^node index.js"
+    "start": "node index.js"
   }
 }

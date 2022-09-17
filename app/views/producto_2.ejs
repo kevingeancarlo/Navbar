@@ -16,6 +16,7 @@
             <% productos.forEach(function(producto) {%>
                 <table class="table mt-2">
                 <%if (producto.nombre=='Milo') {%>
+                <%} else if (producto.nombre=='Chocolisto'){%>
                     <thead class="thead-dark">
                         <tr>
                             <th>Nombre del producto</th>
@@ -30,14 +31,13 @@
                     <td><%= producto.fecha %></td>
                     <td><%= producto.documento %></td>
                     <td><%= producto.impuesto %></td>
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col text-center">
-                                <img class="mx-auto d-block" src="/Images/logo_milo.jpg" height="200" width="400">  
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img class="mx-auto d-block" src="/Images/logo_chocolisto.jpg" height="200" width="400">  
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <%} else if (producto.nombre=='Chocolisto'){%>
                 <%} else if (producto.nombre=='Nesquik'){%>
                 <%}%>
             </tr>

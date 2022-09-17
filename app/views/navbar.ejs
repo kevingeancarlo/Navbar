@@ -10,9 +10,19 @@
             </li>
             <%if (productos.length) {%>
                 <% productos.forEach(function(producto) {%>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/producto"><%= producto.nombre %></a>
-                    </li>
+                    <%if (producto.nombre=='Milo') {%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/producto"><%= producto.nombre %></a>
+                        </li>
+                    <%} else if (producto.nombre=='Chocolisto'){%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/producto_2"><%= producto.nombre %></a>
+                        </li>
+                    <%} else if (producto.nombre=='Nesquik'){%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/producto_3"><%= producto.nombre %></a>
+                        </li>
+                    <%}%>
                 <%})%>
             <%} else {%>
                 <li class="nav-item">
